@@ -1,14 +1,43 @@
-.NavContainer{
+.NavContainer {
     height: 80px;
-    display:flex;
+    display: flex;
     justify-content: space-around;
     align-items: center;
 }
-.NavLink{
-    a{
+
+.NavLink {
+    a {
         padding: 2rem;
     }
 }
-.NavLogo{
 
+.Fade {
+    animation: fadeIn 5s ease 0s 1 normal;
+}
+
+@keyframes fadeIn {
+
+    /*animation-nameで設定した値を書く*/
+    0% {
+        opacity: 0
+    }
+
+    /*アニメーション開始時は不透明度0%*/
+    100% {
+        opacity: 1
+    }
+
+    /*アニメーション終了時は不透明度100%*/
+}
+.box{
+    height: 110vh;
+    text-align: center;
+}
+.box2{
+    padding: 2rem;
+    text-align: center;
+    margin: 0 auto;
+    height: 10vh;
+    width: 50%;
+    box-shadow: 0px 3px 10px rgba(0,0,0,.8)
 }
